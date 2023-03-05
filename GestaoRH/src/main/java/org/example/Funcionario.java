@@ -4,7 +4,7 @@ package org.example;
 public abstract class Funcionario {
     private int codigo;
     private String nome;
-    private double salarioBase;
+    public double salarioBase;
 
     public Funcionario(int codigo, String nome) {
         this.codigo = codigo;
@@ -30,4 +30,6 @@ public abstract class Funcionario {
     public void setSalarioBase(double salarioBase) {
         this.salarioBase = salarioBase;
     }
+
+    public abstract String getInformacoes();
 }
