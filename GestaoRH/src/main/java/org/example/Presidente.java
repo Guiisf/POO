@@ -2,17 +2,17 @@ package org.example;
 
 public class Presidente extends Funcionario {
 
-    private double acoes;
+    private final double ACOES;
 
-    public Presidente(int codigo, String nome, double acoes) {
+    public Presidente(int codigo, String nome, double ACOES) {
         super(codigo, nome);
-        this.acoes = acoes;
+        this.ACOES = ACOES;
     }
 
 
     @Override
     public double calcularSalario() {
-        return salarioBase + acoes;
+        return salarioBase + ACOES;
     }
 
     @Override
@@ -21,11 +21,9 @@ public class Presidente extends Funcionario {
 
     }
 
-    public double getAcoes() {
-        return acoes;
+    public double getACOES() {
+        return ACOES;
     }
 
-    public void setAcoes(double acoes) {
-        this.acoes = acoes;
-    }
+
 }
